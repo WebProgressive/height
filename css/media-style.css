@@ -8,8 +8,20 @@
 
 	/* --- Header --- */
 	#header {
-		height: 171px;
+		min-height: 162px;
+    background: url(../images/header-bg-750.jpg) no-repeat center top;
 	}
+
+  #logo-small {
+    position: relative;
+    top: 36px;
+    left: 33px;
+  }
+
+  #header .navbar-default {
+    background-color: inherit;
+    border: none;
+  }
 
 	/* --- Navbar menu --- */
   	.navbar-header {
@@ -20,11 +32,34 @@
   	}
   	.navbar-toggle {
     	display: block;
+      position: relative;
+      top: -30px;
+      left: -25px;
+      margin: 0;
+      border: inherit;
   	}
+    .navbar-toggle:hover, .navbar-toggle:active {
+      background-color: inherit !important;
+    }
+    .navbar-toggle .icon-bar {
+      display: block;
+      width: 40px;
+      height: 4px;
+      border-radius: 1px;
+      background-color: #ffffff !important;
+    }
+
+    .navbar-toggle .icon-bar+.icon-bar {
+    margin-top: 8px;
+    }
+
   	.navbar-collapse {
     	border-top: 1px solid transparent;
     	box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
   	}
+    .container > .navbar-collapse {
+      margin: 0!important;
+    }
   	.navbar-fixed-top {
     	top: 0;
     	border-width: 0 0 1px;
@@ -43,24 +78,159 @@
     	padding-top: 10px;
     	padding-bottom: 10px;
   	}
+    .navbar {
+      margin:0px;
+    }
+    .navbar-header {
+      height: 83px;
+    }
   	.collapse.in{
     	display:block !important;
+      background: #ffffff;
   	}
 }	
 
 /* --- >= 1280 --- */
 @media (min-width: 1280px){
 	body {
-		background: url(../images/header-bg-1280.png) no-repeat right top;
+		background: url(../images/header-bg-1280.png) no-repeat center top;
 	}
 	.container {
-		width: 1280px;
+		width: 1260px;
 	}
 
 	/* --- Header --- */
-	#header {
-		height: 162px;
+	.header {
+		height: 108px;
 	}
+
+  .header-top-1280 {
+    height: 108px;
+    box-sizing: border-box;
+    padding: 34px 0 22px !important;
+  }
+
+  .time {
+    margin-left: 87px;
+    width: 120px;
+    float: left;
+  }
+
+  .time > p {
+    background: url(../images/time.png) no-repeat left center;
+    padding-left: 18px;
+    font-family: "Neris-SemiBold";
+    font-size: 12px;
+    display: block;
+  }
+
+  .time > p + p {
+    background: inherit;
+    padding-left: inherit;
+    font-family: "Neris-SemiBoldItalic";
+    font-size: 18px;
+  }
+
+  .mail {
+    width: 150px;
+    float: left;
+    margin-left: 45px;
+  }
+
+  .mail > p {
+    background: url(../images/mail.png) no-repeat left center;
+    padding-left: 18px;
+    font-family: "Neris-SemiBold";
+    font-size: 12px;
+    display: block;
+  }
+
+    .mail > p + p {
+    background: inherit;
+    padding-left: inherit;
+    font-family: "Neris-SemiBoldItalic";
+    font-size: 18px;
+  }
+    .phone {
+    width: 220px;
+    float: left;
+    margin-left: 45px;
+    margin-right: 23px;
+  }
+
+  .phone > p {
+    background: url(../images/phone.png) no-repeat left center;
+    padding-left: 18px;
+    font-family: "Neris-SemiBold";
+    font-size: 12px;
+    display: block;
+  }
+
+  .phone > p + p {
+    background: inherit;
+    padding-left: inherit;
+    font-family: "Neris-SemiBoldItalic";
+    font-size: 23px;
+  }
+
+/* --- Nav horizontal --- */
+  .menu-hr {
+    border: 2px solid #d5d5d5;
+    background: url(../images/nav-bg.jpg) repeat-x;
+  }
+
+  .menu-hr ul > li {
+    border-left: 1px solid #bdbdbd;
+  }
+
+   .menu-hr ul > li:first-child {
+    border-left: none;
+  }
+
+  .menu-hr .nav>li>a {
+    padding: 18px 25px !important;
+  }
+
+  .menu-hr ul > li > a{
+    font-family: "Neris-SemiBold";
+    font-size: 18px;
+    color: #000000;
+  }
+
+  .menu-hr ul > li > a:hover, .menu-hr ul > li > a:visited, .menu-hr ul > li > a:focus, .menu-hr ul > li.active{
+    background: url(../images/nav-bg-active.jpg) repeat-x;
+  }
+
+/* --- Form question --- */
+
+  .form-question {
+    width: 338px;
+    border: 1px solid #e1e1e1;
+    -webkit-border-radius: 2px 2px 2px 2px;
+    border-radius: 2px 2px 2px 2px;
+    background: rgba(229,229,229,0.3);
+    padding: 22px;
+    height: 270px;
+  }
+
+  #title-block-question {
+    margin: -10px 0 10px 0;
+    display: block;
+  }
+
+  #text-block-question {
+    margin: 10px 0;
+    display: block;
+  }
+
+  .form-question .button-red {
+    float: right;
+  }
+
+  /* --- Nav vertical --- */
+  ul#menu-vertical ul {
+    display: none;
+  }
 }
 
 

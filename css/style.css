@@ -7,17 +7,100 @@
 	margin: 0;
 }
 .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
-	//padding: 0;
+	padding: 0;
+}
+.navbar-collapse {
+	padding: 0;
 }	
 
 /* --- General style --- */
+
+@font-face {
+    font-family: "Neris-SemiBold"; 
+    src: url(../fonts/neris/Neris-SemiBold.otf); 
+   }
+
+@font-face {
+    font-family: "Neris-SemiBoldItalic"; 
+    src: url(../fonts/neris/Neris-SemiBoldItalic.otf); 
+   }   
+
+@font-face {
+    font-family: "Neris-BoldItalic"; 
+    src: url(../fonts/neris/Neris-BoldItalic.otf); 
+   }    
+
+@font-face {
+    font-family: "Neris-LightItalic"; 
+    src: url(../fonts/neris/Neris-LightItalic.otf); 
+   }
 
 body {
 	background-color: #ffffff;
 }
 
-/* --- Header --- */
+/* --- Button --- */
 
-#header {
-	border: 1px solid red;
-}
+  button.button-transparent-red {
+    background-color: inherit;
+    border:2px solid #e18586;
+    color: #d00d0d;
+    font-family: "Neris-BoldItalic";
+    font-size: 15px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    width: 150px;
+  }
+
+  button.button-transparent-red:hover {
+    background-color: inherit;
+    border:2px solid #e18586;
+    color: #d00d0d;
+    -webkit-box-shadow:inset 0 0 5px 5px rgba(208,13,13,0.15);
+    box-shadow:inset 0 0 5px 5px rgba(208,13,13,0.15);
+  }
+
+    button.button-transparent-red:focus, button.button-transparent-red:visited {
+    border:2px solid #e18586;
+    outline: none;
+    color: #d00d0d;
+  } 
+
+    button.button-red {
+    background: -webkit-linear-gradient(rgba(178,8,15,0.6) 0%, rgba(178,8,15,1) 100%);
+    background: -o-linear-gradient(rgba(178,8,15,0.6) 0%, rgba(178,8,15,1) 100%);
+    background: linear-gradient(rgba(178,8,15,0.6) 0%, rgba(178,8,15,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99b2080f', endColorstr='#b2080f',GradientType=0 );
+    border: none;
+    border-radius: inherit;
+    color: #ffffff;
+    font-family: "Neris-LightItalic";
+    font-size: 15px;
+    cursor: pointer;
+      }
+
+ button.button-red:hover, button.button-red:focus, button.button-red:visited {
+    background-color: rgba(178,8,15,1);
+    color: #ffffff;
+  }
+
+    button.button-transparent-red:focus, button.button-transparent-red:visited {
+    border:2px solid #e18586;
+    outline: none;
+    color: #d00d0d;
+  } 
+  
+  /* --- Text --- */
+
+  .title-block {
+    font-family: "Neris-LightItalic";
+    font-size: 26px;
+    color: #2a51a1;
+  }
+
+  .text-block {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #2a51a1;
+  }
